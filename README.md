@@ -44,7 +44,26 @@ On macOS:
 1. Search for "Terminal" in Spotlight
 2. A window will open with a command prompt (something like `yourname@computername ~ %`)
 
-### Step 2: Clone the Repository And Go Into It
+### Step 2: Ensure You Have Nix Installed
+
+To check if you have Nix installed, open Terminal and run:
+
+  ```bash
+  nix --version
+  ```
+
+  If you see a version number, skip to Step 1. If you get "command not found", install Nix:
+
+  ```bash
+  curl -L https://nixos.org/nix/install | sh
+  ```
+
+  This will take 5-10 minutes. When it finishes:
+  1. Close Terminal
+  2. Open a new Terminal
+  3. Verify installation: `nix --version`
+
+### Step 3: Clone the Repository And Go Into It
 
 If you haven't already cloned this repository:
 
@@ -61,7 +80,7 @@ ls
 
 You should see files like `shell.nix`, `README.md`, and `starter_template.ipynb` listed.
 
-### Step 3: Enter the Nix Shell
+### Step 4: Enter the Nix Shell
 
 Type this command and press Enter:
 
